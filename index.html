@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNAK</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="media/favicon.png" type="image/gif" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="sound-toggle" class="button-hover-effect">SOUND ON</button>
+        <img src="media/logo.png" class="logo">
+        <button id="info-button" class="button-hover-effect">INFO</button>
+    </header>
+    <div class="video-container">
+        <video id="background-video" autoplay muted loop>
+            <source src="media/video.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+        </video>
+        <div class="bottom-left">
+            <img src="media/logo.png" class="footer-logo" alt="Logo">
+            <p class="copyright-text">Copyright © 2024 - All Rights Reserved</p>
+        </div>
+    </div>
+    <nav id="menu" class="menu">
+        <button id="close-menu" class="close-button button-hover-effect">X</button>
+        <div class="menu-header">
+            <span class="menu-title">QUICK LINKS</span>
+        </div>
+        <ul>
+            <li><a href="https://found.ee/Knak_" target="_blank">TICKETS</a></li>
+            <li><a href="https://open.spotify.com/artist/3IYKcXI1sFqT1ZtfyoW55C" target="_blank">SPOTIFY</a></li>
+            <li><a href="https://www.youtube.com/@knak." target="_blank">YOUTUBE</a></li>
+            <li><a href="https://www.instagram.com/kidknak/" target="_blank">INSTAGRAM</a></li>
+        </ul>
+        <div class="menu-footer">
+            <p>© 2024 KNAK <span class="contact-email">CONTACT@KNAK.COM</span></p>
+        </div>
+    </nav>
+    <script src="js/video.js"></script>
+</body>
+</html>
