@@ -6,12 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const logo = document.querySelector('.logo');
     const header = document.querySelector('header');
     const elementsToHide = [logo];
+    const video = document.getElementById('background-video');
 
     header.classList.remove('transparent-background');
 
     soundToggle.addEventListener('click', function () {
-        const video = document.getElementById('background-video');
-        
         if (video.muted) {
             video.muted = false;
             soundToggle.textContent = 'SOUND OFF';
@@ -33,5 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     closeButton.addEventListener('click', function () {
         menu.classList.remove('show');
+    });
+
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'visible' && video.paused) {
+            video.play().catch(function() {
+            });
+        }
+    });
+
+    video.play().catch(function() {
     });
 });
