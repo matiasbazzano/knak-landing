@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const soundToggle = document.getElementById('sound-toggle');
     const infoButton = document.getElementById('info-button');
-    const menu = document.getElementById('menu');
-    const closeButton = document.getElementById('close-menu');
     const logo = document.querySelector('.logo');
+    const footerLogo = document.querySelector('.footer-logo');
+    const copyrightText = document.querySelector('.copyright-text');
     const header = document.querySelector('header');
-    const elementsToHide = [logo];
     const video = document.getElementById('background-video');
+
+    const elementsToHide = [logo, footerLogo, copyrightText];
 
     header.classList.remove('transparent-background');
 
@@ -27,10 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     infoButton.addEventListener('click', function () {
+        const menu = document.getElementById('menu');
         menu.classList.add('show');
     });
 
+    const closeButton = document.getElementById('close-menu');
     closeButton.addEventListener('click', function () {
+        const menu = document.getElementById('menu');
         menu.classList.remove('show');
     });
 
