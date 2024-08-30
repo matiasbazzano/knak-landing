@@ -324,7 +324,9 @@ body, html {
 
     .copyright-text {
         font-size: 14px !important;
+        margin-bottom: 10% !important;
         margin: 0;
+        font-weight: bold !important;
     }
     }
     @media (max-width: 480px) {
